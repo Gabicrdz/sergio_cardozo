@@ -23,9 +23,10 @@ $form.addEventListener("submit", async (e) => {
     body: JSON.stringify(entries),
   }).then((response) => {
     if (response.ok) {
-      // ! REDIRIGIR AL USUARIO A LA PÁGINA PRINCIPAL
+      console.log("Inicio de sesión exitoso");  
+      
     } else {
-      // ! MOSTRAR UN MENSAJE DE ERROR AL USUARIO
+      console.log("Inicio de sesión fallido");
     }
   });
 });
