@@ -35,7 +35,7 @@ export const signUpCtrl = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
-};
+};  
 
 export const signOutCtrl = (_req, res) => {
   try {
@@ -53,3 +53,4 @@ export const getMeCtrl = (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
